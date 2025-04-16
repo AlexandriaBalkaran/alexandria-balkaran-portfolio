@@ -9,3 +9,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  @include font-body-header
+}
+
+h2 {
+  @include font-body-header; 
+  font-size: 1.5rem;
+}
+p {
+  @include font-body
+}
