@@ -1,0 +1,14 @@
+.nav-bar {
+  &__container {
+    display: flex;
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+
+    &-contact {
+      display: flex;
+    }
+  }
+}
