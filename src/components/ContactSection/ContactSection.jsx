@@ -3,37 +3,36 @@ import "./ContactSection.scss";
 function ContactSection() {
   return (
     <section id="contact">
-      <h3>Reach out to me and let's have a chat</h3>
+      <h3>Reach out and let's have a chat</h3>
+      <div className="contact__icons-container">
+        <p>
+          <a href="mailto:alexandria.balkaran@gmail.com">
+            <img src="/images/Email-icon.svg"></img>
+          </a>
+        </p>
 
-      <p>
-        <a href="mailto:alexandria.balkaran@gmail.com">
-          alexandria.balkaran@gmail.com
-        </a>
-      </p>
+        <p>
+          <a
+            href="https://www.linkedin.com/in/alexandria-balkaran/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/Linkedin-icon.svg"></img>
+          </a>
+        </p>
 
-      <p>
-        <a
-          href="https://www.linkedin.com/in/alexandria-balkaran/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://www.linkedin.com/in/alexandria-balkaran/
-        </a>
-      </p>
-
-      <p>
-        <a
-          href="https://github.com/AlexandriaBalkaran"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          https://github.com/AlexandriaBalkaran
-        </a>
-      </p>
+        <p>
+          <a
+            href="https://github.com/AlexandriaBalkaran"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/images/Github-icon.svg"></img>
+          </a>
+        </p>
+      </div>
     </section>
   );
 }
 
 export default ContactSection;
-
-  
