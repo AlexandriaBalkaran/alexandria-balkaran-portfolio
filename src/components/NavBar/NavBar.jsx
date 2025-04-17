@@ -20,7 +20,7 @@ function NavBar() {
     <>
       <div className="nav-bar__container">
         <div className="nav-bar__button">
-          <p onClick={() => scrollToSection("about")}>About</p>
+          <p className="nav-bar__button-about" onClick={() => scrollToSection("about")}>About</p>
           <p onClick={() => scrollToSection("projects")}>Projects</p>
         </div>
         <div className="nav-bar__button-contact">
@@ -29,7 +29,7 @@ function NavBar() {
       </div>
 
       {isContactOpen && (
-        <div className="contact-drawer">
+        <div className="contact__drawer">
           <ContactSection />
         </div>
       )}

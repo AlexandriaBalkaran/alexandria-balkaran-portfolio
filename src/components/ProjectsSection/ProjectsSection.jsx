@@ -1,28 +1,3 @@
-// import "./ProjectsSection.scss";
-
-// function ProjectsSection() {
-//   return (
-//     <section id="projects">
-//       <h2>Projects</h2>
-//       <video
-//           className="pour-decisions__video"
-//           width="100%"
-//           height="auto"
-//           loop
-//           muted
-//           playsInline
-//         >
-//           <source
-//             src="src/assets/projects/Pour Decisions video.mp4"
-//             type="video/mp4"
-//           />
-//         </video>
-//     </section>
-//   );
-// }
-
-// export default ProjectsSection;
-
 import React, { useEffect } from "react";
 import "./ProjectsSection.scss";
 
@@ -49,6 +24,7 @@ function ProjectsSection() {
   return (
     <section id="projects">
       <h2>Projects</h2>
+      <p>Check out some of my most notable projects</p>
       <video
         className="pour-decisions__video"
         width="100%"

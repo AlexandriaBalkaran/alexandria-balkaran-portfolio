@@ -7,7 +7,7 @@ function ContactSection() {
       <div className="contact__icons-container">
         <p>
           <a href="mailto:alexandria.balkaran@gmail.com">
-            <img src="/images/Email-icon.svg"></img>
+            <img src="/images/Email-icon.svg" alt="email icon"></img>
           </a>
         </p>
 
@@ -17,7 +17,7 @@ function ContactSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/Linkedin-icon.svg"></img>
+            <img src="/images/Linkedin-icon.svg" alt="linkedin icon"></img>
           </a>
         </p>
 
@@ -27,7 +27,7 @@ function ContactSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="/images/Github-icon.svg"></img>
+            <img src="/images/Github-icon.svg" alt="github icon"></img>
           </a>
         </p>
       </div>

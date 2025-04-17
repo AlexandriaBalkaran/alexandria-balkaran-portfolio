@@ -3,6 +3,7 @@ import "./AboutSection.scss";
 function AboutSection() {
     return (
       <section id="about">
+        <img src="src/assets/images/Alexandria-picture.JPG" alt="image of alexandria"></img>
         <h2>About</h2>
         <p>
           From Sales & Marketing to Software Engineering—rewiring my career to
