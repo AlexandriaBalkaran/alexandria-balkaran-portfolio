@@ -13,16 +13,16 @@ function ProjectsSection() {
     <section id="projects">
       <h2>Projects</h2>
       <p>Check out some of my most notable projects</p>
-      <div className="projects-grid">
+      <div className="projects__grid">
         {projects.map((project) => (
           <div
             key={project.id}
-            className={`project-box ${activeProject === project.id ? "active" : ""}`}
+            className={`project__container ${activeProject === project.id ? "active" : ""}`}
             onClick={() => handleClick(project.id)}
           >
             <h3>{project.title}</h3>
             {activeProject === project.id && (
-              <div className="project-details">
+              <div className="project__container-details">
                 <p>{project.description}</p>
                 <ul>
                   {project.techStack.map((tech) => (

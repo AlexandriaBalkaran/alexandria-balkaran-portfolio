@@ -24,7 +24,7 @@ h3 {
   font-size: 1rem;
 }
 
-p , a {
+p , a , ul {
   @include font-body
 }
 

@@ -1,9 +1,16 @@
 import "./AboutSection.scss";
 
 function AboutSection() {
-    return (
+  return (
+    <>
+      <div>
+        <img
+          className="about__image-alexandria"
+          src="src/assets/images/Alexandria-picture.JPG"
+          alt="image of alexandria"
+        ></img>
+      </div>
       <section id="about">
-        <img className="about__image-alexandria" src="src/assets/images/Alexandria-picture.JPG" alt="image of alexandria"></img>
         <h2>About</h2>
         <p>
           From Sales & Marketing to Software Engineering—rewiring my career to
@@ -11,8 +18,8 @@ function AboutSection() {
           and turning ideas into reality. Let’s make something great!
         </p>
       </section>
-    );
-  }
-  
-  export default AboutSection;
-  
+    </>
+  );
+}
+
+export default AboutSection;
