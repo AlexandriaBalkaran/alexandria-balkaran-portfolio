@@ -1,0 +1,38 @@
+[
+    {
+      "id": "pour-decisions",
+      "title": "Pour Decisions",
+      "description": "A happy hour finder app for Toronto bars.",
+      "techStack": ["React", "Vite", "Google Maps API", "Firebase"],
+      "videoSrc": "src/assets/projects/Pour Decisions video.mp4"
+    },
+    {
+      "id": "biz-bot",
+      "title": "Biz Bot",
+      "description": "AI-powered consultant for small businesses.",
+      "techStack": ["React", "Gemini API", "SCSS"],
+      "videoSrc": "src/assets/projects/Biz-Bot video.mp4"
+    },
+    {
+      "id": "snaps",
+      "title": "Snaps",
+      "description": "Photo sharing app inspired by Snapchat.",
+      "techStack": ["React", "Firebase", "SCSS"],
+      "videoSrc": "src/assets/projects/Snaps video.mp4"
+    },
+    {
+      "id": "insta-cards",
+      "title": "Insta Cards",
+      "description": "Interactive Instagram story game.",
+      "techStack": ["JavaScript", "HTML", "CSS"],
+      "videoSrc": "src/assets/projects/Insta-cards video.mp4"
+    },
+    {
+      "id": "harry-potter",
+      "title": "Harry Potter Game",
+      "description": "A simple quiz game based on Harry Potter.",
+      "techStack": ["JavaScript", "HTML", "CSS"],
+      "videoSrc": "src/assets/projects/Harry-potter-game video.mp4"
+    }
+  ]
+  
