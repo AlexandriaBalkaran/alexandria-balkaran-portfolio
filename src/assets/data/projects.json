@@ -7,18 +7,18 @@
       "videoSrc": "src/assets/projects/Pour Decisions video.mp4"
     },
     {
-      "id": "biz-bot",
-      "title": "Biz-Bot.AI",
-      "description": "BizBot.AI (a Brainstation X Microsoft project) is an AI-powered assistant designed to help small businesses streamline operations, reduce costs, and optimize decision-making.",
-      "techStack": ["React", "Gemini API", "SCSS"],
-      "videoSrc": "src/assets/projects/Biz-Bot video.mp4"
-    },
-    {
       "id": "snaps",
       "title": "Snaps",
       "description": "Photo sharing app inspired by Snapchat.",
       "techStack": ["React" , "SCSS" , "Node.js" , "Express.js"],
       "videoSrc": "src/assets/projects/Snaps video.mp4"
+    },
+    {
+      "id": "biz-bot",
+      "title": "Biz-Bot.AI",
+      "description": "BizBot.AI (a Brainstation X Microsoft project) is an AI-powered assistant designed to help small businesses streamline operations, reduce costs, and optimize decision-making.",
+      "techStack": ["React", "Gemini API", "SCSS"],
+      "videoSrc": "src/assets/projects/Biz-Bot video.mp4"
     },
     {
       "id": "insta-cards",
