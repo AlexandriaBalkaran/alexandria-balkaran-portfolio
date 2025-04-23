@@ -3,7 +3,7 @@ import "./Homepage.scss";
 import AboutSection from "../../components/AboutSection/AboutSection";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
-import NavBar from "../../components/NavBar/NavBar";
+import Header from "../../components/Header/Header";
 
 function Homepage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,7 +32,7 @@ function Homepage() {
 
   return (
     <div className={`homepage__container ${darkMode ? "dark" : ""}`}>
-      <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <AboutSection />
       <ProjectsSection />
       <ContactSection />

@@ -1,8 +1,10 @@
 import "./Header.scss";
+import NavBar from "../NavBar/NavBar";
 
-function Header() {
+function Header({ darkMode, toggleDarkMode }) {
   return (
     <>
+      <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
     </>
   );
 }
