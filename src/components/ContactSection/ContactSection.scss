@@ -1,5 +1,1 @@
-.contact__icons-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem;
-}
+@use "/src/styles/partials/_variables.scss" as *;

@@ -1,16 +1,9 @@
 .nav-bar {
-  &__container {
-    display: flex;
-    justify-content: space-between;
-  }
 
   &__button {
     cursor: pointer;
     display: flex;
-
-    &-about {
-        padding-right: 1rem;
-    }
+    justify-content: space-around;
 
     &-contact {
       display: flex;

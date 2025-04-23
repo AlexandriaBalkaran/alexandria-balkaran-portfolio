@@ -2,34 +2,30 @@ import "./ContactSection.scss";
 
 function ContactSection() {
   return (
-    <section id="contact">
-      <h3>Reach out and let's have a chat</h3>
+    <section id="contact" className="contact">
+      <h2>Contact</h2>
+      <p>Let's connect!</p>
+      <p>Reach out via email or find me on LinkedIn and GitHub.</p>
       <div className="contact__icons-container">
-        <p>
-          <a href="mailto:alexandria.balkaran@gmail.com">
-            <img src="/images/Email-icon.svg" alt="email icon"></img>
-          </a>
-        </p>
+        <a href="mailto:alexandria.balkaran@gmail.com">
+          <img src="/images/Email-icon.svg" alt="email icon" />
+        </a>
 
-        <p>
-          <a
-            href="https://www.linkedin.com/in/alexandria-balkaran/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/images/Linkedin-icon.svg" alt="linkedin icon"></img>
-          </a>
-        </p>
+        <a
+          href="https://www.linkedin.com/in/alexandria-balkaran/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/images/Linkedin-icon.svg" alt="linkedin icon" />
+        </a>
 
-        <p>
-          <a
-            href="https://github.com/AlexandriaBalkaran"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src="/images/Github-icon.svg" alt="github icon"></img>
-          </a>
-        </p>
+        <a
+          href="https://github.com/AlexandriaBalkaran"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="/images/Github-icon.svg" alt="github icon" />
+        </a>
       </div>
     </section>
   );
