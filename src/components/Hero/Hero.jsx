@@ -10,8 +10,20 @@ function Hero() {
 
   return (
     <section id="home" className="hero">
-      <h1>Hey, I'm <span className="highlight">Alexandria Balkaran</span></h1>
-      <p>After 6+ years working in Sales and Marketing, I’ve decided to switch gears and conquer the world of Software Engineering!  </p>
+      <h1>
+        Hey, I'm <span className="highlight">Alexandria Balkaran</span>
+      </h1>
+      <p>
+        After 6+ years working in Sales and Marketing, I’ve decided to switch
+        gears and conquer the world of Software Engineering!
+      </p>
+      <div>
+        <img
+          className="hero__image-alexandria"
+          src="src/assets/images/Alexandria-picture.JPG"
+          alt="image of alexandria"
+        ></img>
+      </div>
 
       <div className="buttons">
         <button onClick={() => scrollTo("projects")}>

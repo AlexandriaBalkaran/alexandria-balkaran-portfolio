@@ -12,10 +12,22 @@ function NavBar({ darkMode, toggleDarkMode }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const scrollToSection = (id) => {
+  //   const section = document.getElementById(id);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: "smooth" });
+  //     setIsMenuOpen(false);
+  //   }
+  // };
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const offsetTop = section.offsetTop - 70;
+      window.scrollTo({
+        top: offsetTop,
+        behavior: "smooth"
+      });
       setIsMenuOpen(false);
     }
   };

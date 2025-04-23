@@ -3,13 +3,6 @@ import "./AboutSection.scss";
 function AboutSection() {
   return (
     <>
-      <div>
-        <img
-          className="about__image-alexandria"
-          src="src/assets/images/Alexandria-picture.JPG"
-          alt="image of alexandria"
-        ></img>
-      </div>
       <section id="about">
         <h2>About</h2>
         <p>

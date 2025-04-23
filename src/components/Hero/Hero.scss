@@ -7,6 +7,7 @@
   padding: 4rem 1rem;
   color: $colour-primary-dark;
   transition: background-color 0.3s, color 0.3s;
+  height: 100vh;
 
   .highlight {
     color: $colour-secondary-medium;
@@ -17,7 +18,6 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 2rem;
 
     button {
       padding: 0.75rem 1.25rem;
@@ -41,6 +41,12 @@
         opacity: 0.9;
       }
     }
+  }
+
+  &__image-alexandria {
+    width: 30%;
+    border-radius: 50%;
+    margin: 1rem;
   }
 }
 
