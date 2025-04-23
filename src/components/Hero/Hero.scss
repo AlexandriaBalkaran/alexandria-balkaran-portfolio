@@ -1,0 +1,59 @@
+@use "/src/styles/partials/_global.scss" as *;
+@use "/src/styles/partials/_mixins.scss" as *;
+@use "/src/styles/partials/_variables.scss" as *;
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: $colour-primary-dark;
+  transition: background-color 0.3s, color 0.3s;
+
+  .highlight {
+    color: $colour-secondary-medium;
+    font-weight: bold;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    button {
+      padding: 0.75rem 1.25rem;
+      border: none;
+      border-radius: 4px;
+      background-color: $colour-secondary-medium;
+      color: $colour-primary-light;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &.outline {
+        background-color: transparent;
+        border: 2px solid $colour-secondary-medium;
+        color: $colour-secondary-medium;
+      }
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+.dark .hero {
+  background-color: $colour-primary-dark;
+  color: $colour-primary-light;
+
+  button {
+    background-color: $colour-secondary-medium;
+
+    &.outline {
+      border-color: $colour-secondary-medium;
+      color: $colour-primary-light;
+    }
+  }
+}

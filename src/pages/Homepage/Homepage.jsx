@@ -4,6 +4,7 @@ import AboutSection from "../../components/AboutSection/AboutSection";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import Header from "../../components/Header/Header";
+import Hero from "../../components/Hero/Hero";
 
 function Homepage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,6 +34,7 @@ function Homepage() {
   return (
     <div className={`homepage__container ${darkMode ? "dark" : ""}`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Hero></Hero>
       <AboutSection />
       <ProjectsSection />
       <ContactSection />

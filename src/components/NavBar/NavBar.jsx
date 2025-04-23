@@ -24,7 +24,8 @@ function NavBar({ darkMode, toggleDarkMode }) {
     <div className={`nav-bar__container ${scrolled ? "scrolled" : ""}`}>
       <div className="nav-bar__left">
         <p className="nav-bar__logo" onClick={() => scrollToSection("home")}>
-          <span className="highlight">A</span>lexandria
+          <span className="highlight">A</span>lexandria{" "}
+          <span className="highlight">B</span>alkaran
         </p>
       </div>
 
@@ -42,7 +43,10 @@ function NavBar({ darkMode, toggleDarkMode }) {
         </button>
 
         {/* Mobile menu button */}
-        <button className="nav-bar__menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button
+          className="nav-bar__menu-toggle"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
