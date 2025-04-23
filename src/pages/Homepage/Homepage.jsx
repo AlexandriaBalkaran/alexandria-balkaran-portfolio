@@ -1,28 +1,9 @@
-// import "./Homepage.scss";
-// import AboutSection from "../../components/AboutSection/AboutSection";
-// import Header from "../../components/Header/Header";
-// import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
-// import ContactSection from "../../components/ContactSection/ContactSection";
-
-// function Homepage() {
-
-//   return (
-//     <>
-//       <Header></Header>
-//       <AboutSection></AboutSection>
-//       <ProjectsSection></ProjectsSection>
-//       <ContactSection></ContactSection>
-//     </>
-//   );
-// }
-
-
 import React, { useState, useEffect } from "react";
 import "./Homepage.scss";
 import AboutSection from "../../components/AboutSection/AboutSection";
-import Header from "../../components/Header/Header";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
+import NavBar from "../../components/NavBar/NavBar";
 
 function Homepage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -51,7 +32,7 @@ function Homepage() {
 
   return (
     <div className={`homepage__container ${darkMode ? "dark" : ""}`}>
-      <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+      <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <AboutSection />
       <ProjectsSection />
       <ContactSection />
@@ -60,3 +41,4 @@ function Homepage() {
 }
 
 export default Homepage;
+

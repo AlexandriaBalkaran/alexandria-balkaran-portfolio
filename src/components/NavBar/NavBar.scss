@@ -1,13 +1,155 @@
-.nav-bar {
+// .nav-bar {
 
-  &__button {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
+//   &__button {
+//     cursor: pointer;
+//     display: flex;
+//     justify-content: space-around;
 
-    &-contact {
-      display: flex;
-      cursor: pointer;
+//     &-contact {
+//       display: flex;
+//       cursor: pointer;
+//     }
+//   }
+// }
+.nav-bar__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+  &.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    // dark mode
+    .dark & {
+      background-color: #111827;
     }
   }
 }
+
+.nav-bar__left {
+  .nav-bar__logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #1f2937;
+
+    .highlight {
+      color: #14b8a6; // teal
+    }
+
+    .dark & {
+      color: #f9fafb;
+    }
+  }
+}
+
+.nav-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-bar__links {
+  display: flex;
+  gap: 2rem;
+
+  p {
+    cursor: pointer;
+    font-weight: 500;
+    color: #374151;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #14b8a6;
+    }
+
+    .dark & {
+      color: #d1d5db;
+
+      &:hover {
+        color: #5eead4;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.nav-bar__theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  color: #374151;
+
+  .dark & {
+    color: #d1d5db;
+  }
+
+  &:hover {
+    color: #14b8a6;
+  }
+}
+
+.nav-bar__menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  color: #374151;
+
+  .dark & {
+    color: #d1d5db;
+  }
+}
+
+.nav-bar__mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .dark & {
+    background-color: #111827;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #374151;
+    cursor: pointer;
+
+    &:hover {
+      color: #14b8a6;
+    }
+
+    .dark & {
+      color: #d1d5db;
+
+      &:hover {
+        color: #5eead4;
+      }
+    }
+  }
+}
+
+

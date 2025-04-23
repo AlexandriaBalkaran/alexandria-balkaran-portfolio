@@ -9,7 +9,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &.dark {
-    background-color: $colour-primary-light;
-    color: $colour-primary-dark;
+    background-color: $colour-primary-dark;
+    color: $colour-primary-light;
   }
 }
