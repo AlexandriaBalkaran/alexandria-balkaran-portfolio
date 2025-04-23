@@ -27,8 +27,3 @@ h3 {
 p , a , ul {
   @include font-body
 }
-
-body {
-  background-color: $colour-primary-dark;
-  color: $colour-primary-light;
-}

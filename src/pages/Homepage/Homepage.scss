@@ -2,6 +2,14 @@
 @use "/src/styles/partials/_mixins.scss" as *;
 @use "/src/styles/partials/_variables.scss" as *;
 
+.homepage__container {
+  min-height: 100vh;
+  background-color: $colour-primary-light;
+  color: $colour-primary-dark;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
-
-
+  &.dark {
+    background-color: $colour-primary-light;
+    color: $colour-primary-dark;
+  }
+}
