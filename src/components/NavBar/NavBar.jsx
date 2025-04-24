@@ -49,10 +49,10 @@ function NavBar({ darkMode, toggleDarkMode }) {
           <p onClick={() => scrollToSection("contact")}>Contact</p>
         </div>
 
-        {/* Theme toggle */}
-        <button onClick={toggleDarkMode} className="nav-bar__theme-toggle">
+        {/* Theme toggle - Will add this back in after inital deployment */}
+        {/* <button onClick={toggleDarkMode} className="nav-bar__theme-toggle">
           {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-        </button>
+        </button> */}
 
         {/* Mobile menu button */}
         <button
@@ -66,8 +66,8 @@ function NavBar({ darkMode, toggleDarkMode }) {
       {/* Mobile nav */}
       {isMenuOpen && (
         <div className="nav-bar__mobile-menu">
-          <p onClick={() => scrollToSection("about")}>About</p>
           <p onClick={() => scrollToSection("projects")}>Projects</p>
+          <p onClick={() => scrollToSection("about")}>About</p>
           <p onClick={() => scrollToSection("contact")}>Contact</p>
         </div>
       )}

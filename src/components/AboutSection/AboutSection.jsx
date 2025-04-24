@@ -7,7 +7,10 @@ function AboutSection() {
     <section id="about">
       <h2>About</h2>
       <p>
-        After 6+ years in Sales & Marketing I've decided to pivot my career to focus on Software Engineering. I love tackling new challenges, learning new things,
+      Former Sales & Marketing pro turned Software Engineer with a curious mind and a get-it-done spirit. After years of working in marketing within the tech space, I decided it was time follow my dreams and learn to code.
+      </p>
+      <p>
+        I love tackling new challenges, learning new things,
         and turning ideas into reality. 
       </p>
       <p>When I'm not working, you can find me exploring new hiking trails, camping, fishing or reading.</p>
