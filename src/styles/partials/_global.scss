@@ -11,19 +11,38 @@
 }
 
 h1 {
-  @include font-body-header
+  @include font-body-header;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  @include font-body-header; 
   font-size: 1.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+  @include flex-center;
+  @include font-body-header;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.4rem;
+    transform: translateX(-50%);
+    width: 10%;
+    height: 3px;
+    background-color: $colour-secondary-medium;
+  }
 }
 
 h3 {
-  @include font-body-header; 
-  font-size: 1rem;
+  margin: 2rem 0;
+  @include font-body-subheader;
+  @include flex-center;
 }
 
-p , a , ul {
-  @include font-body
+p,
+a,
+ul {
+  @include font-body;
+  line-height: 1.5rem;
 }

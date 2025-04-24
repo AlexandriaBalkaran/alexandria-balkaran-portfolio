@@ -1,0 +1,10 @@
+@use "/src/styles/partials/_variables.scss" as *;
+@use "/src/styles/partials/_mixins.scss" as *;
+
+.footer__text {
+    height: 30vh;
+    color: $colour-secondary-light-accent;
+    margin-top: 2rem;
+    @include flex-center;
+    @include font-body
+}

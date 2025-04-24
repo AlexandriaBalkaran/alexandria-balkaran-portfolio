@@ -2,7 +2,11 @@
 @use "/src/styles/partials/_mixins.scss" as *;
 
 #about {
+    padding: 2rem 1rem;
 
+    .about__text {
+        margin-bottom: 1rem;;
+    }
     .tech-stack {
       flex-wrap: wrap;
       gap: 1.5rem;
