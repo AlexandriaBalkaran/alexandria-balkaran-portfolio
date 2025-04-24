@@ -4,10 +4,10 @@
 
 .hero {
   text-align: center;
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
   color: $colour-primary-dark;
   transition: background-color 0.3s, color 0.3s;
-  height: 100vh;
+  height: auto;
 
   .highlight {
     color: $colour-secondary-medium;
@@ -20,16 +20,16 @@
     gap: 1rem;
 
     button {
-      padding: 0.75rem 1.25rem;
+      padding: 0.75rem 1rem;
       border: none;
       border-radius: 4px;
       background-color: $colour-secondary-medium;
       color: $colour-primary-light;
-      font-weight: 600;
       cursor: pointer;
       display: flex;
       align-items: center;
       gap: 0.5rem;
+      @include font-body;
 
       &.outline {
         background-color: transparent;
@@ -44,9 +44,10 @@
   }
 
   &__image-alexandria {
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
-    margin: 1rem;
+    margin: 1.5rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 }
 

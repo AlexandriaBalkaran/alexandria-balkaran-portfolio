@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import "./ProjectsSection.scss";
-import projects from "/src/assets/data/projects.json"; 
+import projects from "/src/assets/data/projects.json";
 
 function ProjectsSection() {
   const [activeProject, setActiveProject] = useState(null);
   const [filter, setFilter] = useState("All");
 
   const filteredProjects =
-  filter === "All"
-    ? projects
-    : projects.filter((project) =>
-        filter === "Full-Stack"
-          ? project.techStack.includes("Node.js") || project.techStack.includes("mySQL")
-          : !project.techStack.includes("Node.js") && !project.techStack.includes("mySQL")
-      );
+    filter === "All"
+      ? projects
+      : projects.filter((project) =>
+          filter === "Full-Stack"
+            ? project.techStack.includes("Node.js") ||
+              project.techStack.includes("mySQL")
+            : !project.techStack.includes("Node.js") &&
+              !project.techStack.includes("mySQL")
+        );
 
   const handleClick = (id) => {
     setActiveProject((prev) => (prev === id ? null : id));
@@ -30,10 +32,12 @@ function ProjectsSection() {
       </p>
 
       <div className="projects__filter">
-        {['All', 'Full-Stack', 'Front-End'].map((category) => (
+        {["All", "Full-Stack", "Front-End"].map((category) => (
           <button
             key={category}
-            className={`projects__filter-button ${filter === category ? 'active' : ''}`}
+            className={`projects__filter-button ${
+              filter === category ? "active" : ""
+            }`}
             onClick={() => setFilter(category)}
           >
             {category}
@@ -45,9 +49,10 @@ function ProjectsSection() {
         {filteredProjects.map((project, index) => (
           <div
             key={project.id}
-            className={`project__card ${activeProject === project.id ? "active" : ""}`}
+            className={`project__card ${
+              activeProject === project.id ? "active" : ""
+            }`}
             onClick={() => handleClick(project.id)}
-            
           >
             <div className="project__media">
               <video
@@ -66,16 +71,14 @@ function ProjectsSection() {
             </div>
             <div className="project__info">
               <h3 className="project__title">{project.title}</h3>
-              {activeProject === project.id && (
-                <>
-                  <p className="project__description">{project.description}</p>
-                  <ul className="project__tech-list">
-                    {project.techStack.map((tech) => (
-                      <li key={tech} className="project__tech-item">{tech}</li>
-                    ))}
-                  </ul>
-                </>
-              )}
+              <p className="project__description">{project.description}</p>
+              <ul className="project__tech-list">
+                {project.techStack.map((tech) => (
+                  <li key={tech} className="project__tech-item">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}

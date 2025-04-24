@@ -2,7 +2,7 @@
 @use "/src/styles/partials/_mixins.scss" as *;
 
 .projects {
-  padding: 4rem 1rem;
+  padding: 2rem 1rem;
 
   &__title {
     text-align: center;
@@ -27,9 +27,11 @@
     grid-template-columns: 1fr;
     gap: 2rem;
     align-items: start;
+    margin: 0 4rem;
 
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
+      margin: 0;
     }
 
     @include desktop {
@@ -62,7 +64,6 @@
 }
 
 .project__media {
-  // height: 15rem;
   overflow: hidden;
   background-color: $colour-primary-light;
 
@@ -73,35 +74,37 @@
   }
 }
 
-.project__info {
-  padding: 1.5rem;
-}
+.project {
+  &__info {
+    padding: 1.5rem;
+  }
 
-.project__title {
-  margin-bottom: 0.75rem;
-  @include font-body-subheader;
+  &__title {
+    margin-bottom: 0.75rem;
+    @include font-body-subheader;
+  }
 
   &__description {
-    display: none;
     margin-bottom: 1rem;
     color: $colour-secondary-dark;
   }
 
   &__tech-list {
-    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    @include flex-center;
 
     .project__tech-item {
-      background: #eef2f7;
+      background: $colour-secondary-light-accent-two;
       padding: 0.4rem 0.75rem;
       border-radius: 1rem;
       font-size: 0.85rem;
       color: $colour-secondary-dark;
+      
     }
   }
 }

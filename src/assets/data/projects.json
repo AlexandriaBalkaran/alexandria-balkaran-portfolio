@@ -3,7 +3,7 @@
       "id": "pour-decisions",
       "title": "Pour Decisions",
       "description": "Pour Decisions is a web application that helps users discover the best happy hour deals in downtown Toronto based on their preferred location (specifically neighbourhood), date and time of day.",
-      "techStack": ["React", "Google Maps API" , "SCSS" , "mySQL" , "knex.js" , "Pour-Decisions API"],
+      "techStack": ["React", "Google Maps API" , "SCSS" , "mySQL" , "Knex.js" , "Pour-Decisions API"],
       "videoSrc": "src/assets/projects/Pour Decisions video.mp4"
     },
     {
