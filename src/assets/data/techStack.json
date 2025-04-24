@@ -1,0 +1,62 @@
+[
+  {
+    "name": "React",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "description": "Frontend Development"
+  },
+  {
+    "name": "Node.js",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "description": "Backend Development"
+  },
+  {
+    "name": "Express.js",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    "description": "Web Framework"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "description": "Programming Language"
+  },
+  {
+    "name": "HTML5",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "description": "Markup Language"
+  },
+  {
+    "name": "CSS3",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    "description": "Styling"
+  },
+  {
+    "name": "Sass",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+    "description": "CSS Preprocessor"
+  },
+  {
+    "name": "MySQL",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    "description": "Database"
+  },
+  {
+    "name": "REST APIs",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+    "description": "API Architecture"
+  },
+  {
+    "name": "Knex.js",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+    "description": "SQL Query Builder"
+  },
+  {
+    "name": "XML",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xml/xml-original.svg",
+    "description": "Markup Language"
+  },
+  {
+    "name": "Swift",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+    "description": "iOS Development"
+  }
+]

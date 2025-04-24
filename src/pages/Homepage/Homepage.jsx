@@ -35,8 +35,8 @@ function Homepage() {
     <div className={`homepage__container ${darkMode ? "dark" : ""}`}>
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero></Hero>
-      <AboutSection />
       <ProjectsSection />
+      <AboutSection />
       <ContactSection />
     </div>
   );

@@ -11,6 +11,12 @@
     @content;
   }
 }
+//Styling
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 //Fonts
 @mixin font-body {

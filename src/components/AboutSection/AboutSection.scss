@@ -1,0 +1,39 @@
+@use "/src/styles/partials/_variables.scss" as *;
+@use "/src/styles/partials/_mixins.scss" as *;
+
+#about {
+
+    .tech-stack {
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      @include flex-center;
+    }
+  
+    .tech-card {
+      background-color: $colour-primary-light;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 120px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      &__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      &__description {
+        font-size: 0.7rem;
+        color: $colour-secondary-light-accent;
+      }
+    }
+  }
+
+
+  
