@@ -7,10 +7,11 @@ function AboutSection() {
     <section id="about">
       <h2>About</h2>
       <p>
-        From Sales & Marketing to Software Engineering—rewiring my career to
-        build, create, and solve. I love tackling challenges, learning fast,
-        and turning ideas into reality. Let’s make something great!
+        After 6+ years in Sales & Marketing I've decided to pivot my career to focus on Software Engineering. I love tackling new challenges, learning new things,
+        and turning ideas into reality. 
       </p>
+      <p>When I'm not working, you can find me exploring new hiking trails, camping, fishing or reading.</p>
+      <p>Let’s make something great!</p>
 
       <h3>Tech Stack</h3>
       <div className="tech-stack">
@@ -24,11 +25,6 @@ function AboutSection() {
           </div>
         ))}
       </div>
-
-      {/* <h3>Skills and Expertise</h3>
-      <p>UX/UI</p>
-      <p></p>
-      <p></p> */}
     </section>
   );
 }

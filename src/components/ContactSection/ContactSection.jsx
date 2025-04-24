@@ -4,8 +4,10 @@ function ContactSection() {
   return (
     <section id="contact" className="contact">
       <h2>Contact</h2>
+      <p>⚲ Toronto, Canada</p>
       <p>Let's connect!</p>
       <p>Reach out via email or find me on LinkedIn and GitHub.</p>
+      <p>I'm always open to discussing new projects, creative ideas or opportunities for collaboration.</p>
       <div className="contact__icons-container">
         <a href="mailto:alexandria.balkaran@gmail.com">
           <img src="/images/Email-icon.svg" alt="email icon" />

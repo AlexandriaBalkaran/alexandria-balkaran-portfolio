@@ -5,6 +5,7 @@ import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import ContactSection from "../../components/ContactSection/ContactSection";
 import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
+import Footer from "../../components/Footer/Footer";
 
 function Homepage() {
   const [darkMode, setDarkMode] = useState(false);
@@ -38,6 +39,7 @@ function Homepage() {
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
+      <Footer></Footer>
     </div>
   );
 }
