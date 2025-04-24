@@ -6,15 +6,20 @@
 
   &__title {
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    @include font-body-header;
   }
 
   &__subtitle {
     text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: $colour-secondary-light-accent;
+
+    &-instructions {
+      text-align: center;
+      color: $colour-secondary-light-accent;
+      margin-bottom: 2rem;
+    }
   }
 
   &__grid {
@@ -58,8 +63,8 @@
 
 .project__media {
   // height: 15rem;
-  background: $colour-primary-dark;
   overflow: hidden;
+  background-color: $colour-primary-light;
 
   .project__video {
     width: 100%;
@@ -73,32 +78,31 @@
 }
 
 .project__title {
-  font-size: 1.25rem;
-  font-weight: 600;
   margin-bottom: 0.75rem;
-}
+  @include font-body-subheader;
 
-.project__description {
-  display: none;
-  margin-bottom: 1rem;
-  color: $colour-secondary-dark;
-}
-
-.project__tech-list {
-  display: none;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-
-  .project__tech-item {
-    background: #eef2f7;
-    padding: 0.4rem 0.75rem;
-    border-radius: 1rem;
-    font-size: 0.85rem;
+  &__description {
+    display: none;
+    margin-bottom: 1rem;
     color: $colour-secondary-dark;
+  }
+
+  &__tech-list {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .project__tech-item {
+      background: #eef2f7;
+      padding: 0.4rem 0.75rem;
+      border-radius: 1rem;
+      font-size: 0.85rem;
+      color: $colour-secondary-dark;
+    }
   }
 }
 
@@ -119,39 +123,39 @@
   gap: 1rem;
   margin-bottom: 2rem;
   flex-wrap: wrap;
-}
 
-.projects__filter-button {
-  padding: 0.5rem 1.25rem;
-  font-size: 0.875rem;
-  font-weight: 500;
-  border: none;
-  border-radius: 20rem;
-  background-color: $colour-secondary-light-accent;
-  color: $colour-primary-dark;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-
-  &:hover {
-    background-color: #d1d1d1;
-  }
-
-  &.active {
-    background-color: $colour-secondary-medium;
-      color: $colour-primary-light;
-  }
-
-  .dark & {
-    background-color: #333;
-    color: #ccc;
+  &-button {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 20rem;
+    background-color: $colour-secondary-light-accent;
+    color: $colour-primary-dark;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 
     &:hover {
-      background-color: #444;
+      background-color: #d1d1d1;
     }
 
     &.active {
-      background-color: $colour-secondary-medium; 
+      background-color: $colour-secondary-medium;
       color: $colour-primary-light;
+    }
+
+    .dark & {
+      background-color: #333;
+      color: #ccc;
+
+      &:hover {
+        background-color: #444;
+      }
+
+      &.active {
+        background-color: $colour-secondary-medium;
+        color: $colour-primary-light;
+      }
     }
   }
 }

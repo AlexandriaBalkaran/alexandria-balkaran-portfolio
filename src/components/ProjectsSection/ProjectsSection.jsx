@@ -25,6 +25,9 @@ function ProjectsSection() {
       <p className="projects__subtitle">
         Check out some of my most notable projects
       </p>
+      <p className="projects__subtitle-instructions">
+        Hover over the project image for a live project demo
+      </p>
 
       <div className="projects__filter">
         {['All', 'Full-Stack', 'Front-End'].map((category) => (

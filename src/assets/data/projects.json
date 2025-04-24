@@ -9,7 +9,7 @@
     {
       "id": "snaps",
       "title": "Snaps",
-      "description": "Photo sharing app inspired by Snapchat.",
+      "description": "Photo sharing app for for photographers.",
       "techStack": ["React" , "SCSS" , "Node.js" , "Express.js"],
       "videoSrc": "src/assets/projects/Snaps video.mp4"
     },
@@ -23,7 +23,7 @@
     {
       "id": "insta-cards",
       "title": "Insta-Cards",
-      "description": "Interactive Instagram story game.",
+      "description": "Interactive photocard guessing game.",
       "techStack": ["JavaScript", "HTML", "SCSS" , "Insta-Cards API"],
       "videoSrc": "src/assets/projects/Insta-cards video.mp4"
     },
