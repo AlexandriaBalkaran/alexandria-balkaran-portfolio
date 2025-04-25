@@ -65,10 +65,10 @@ function ProjectsSection() {
     >
       <h2 className="projects__title">Projects</h2>
       <p className="projects__subtitle">
-        Check out some of my most notable projects
+        Check out some of my most notable projects.
       </p>
       <p className="projects__subtitle-instructions">
-        Hover to play video. Swipe, use arrows or keyboard to scroll.
+        Hover to play video. Click arrows or use keyboard to scroll.
       </p>
 
       <div className="projects__filter">
