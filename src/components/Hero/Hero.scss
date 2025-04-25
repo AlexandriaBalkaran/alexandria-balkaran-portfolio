@@ -9,6 +9,14 @@
   transition: background-color 0.3s, color 0.3s;
   height: auto;
 
+  @include tablet {
+    padding: 8rem 3rem;
+    
+    .hero__text {
+        margin: 0 10%;
+    }
+  }
+
   .highlight {
     color: $colour-secondary-medium;
     font-weight: bold;
@@ -31,6 +39,11 @@
       gap: 0.5rem;
       @include font-body;
 
+      @include tablet {
+        padding: 0.75rem 1.25rem;
+        @include font-body-tablet;
+      }
+
       &.outline {
         background-color: transparent;
         border: 2px solid $colour-secondary-medium;
@@ -48,6 +61,11 @@
     border-radius: 50%;
     margin: 1.5rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+        margin: 2rem 20%;
+        max-width: 80%;
+    }
   }
 }
 

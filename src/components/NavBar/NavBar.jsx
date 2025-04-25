@@ -44,8 +44,8 @@ function NavBar({ darkMode, toggleDarkMode }) {
       <div className="nav-bar__right">
         {/* Desktop nav */}
         <div className="nav-bar__links">
-          <p onClick={() => scrollToSection("about")}>About</p>
           <p onClick={() => scrollToSection("projects")}>Projects</p>
+          <p onClick={() => scrollToSection("about")}>About</p>
           <p onClick={() => scrollToSection("contact")}>Contact</p>
         </div>
 

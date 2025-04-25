@@ -14,6 +14,10 @@
   z-index: 1000;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
+  @include tablet {
+    padding: 2rem 3rem;
+  }
+
   &.scrolled {
     background-color: $colour-primary-light;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);

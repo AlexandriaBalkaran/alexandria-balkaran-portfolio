@@ -13,7 +13,7 @@ function Hero() {
       <h1>
         Hey, I'm <span className="highlight">Alexandria Balkaran</span>
       </h1>
-      <p>
+      <p className="hero__text">
         After 6+ years working in Sales and Marketing, I’ve decided to switch
         gears and conquer the world of Software Engineering!
       </p>

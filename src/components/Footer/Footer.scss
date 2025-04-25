@@ -2,9 +2,13 @@
 @use "/src/styles/partials/_mixins.scss" as *;
 
 .footer__text {
-    height: 30vh;
     color: $colour-secondary-light-accent;
-    margin-top: 2rem;
+    margin: 2rem;
     @include flex-center;
-    @include font-body
+    @include font-body;
+
+    @include tablet {
+        @include font-body-tablet;
+        margin-top: 4rem;
+    }
 }

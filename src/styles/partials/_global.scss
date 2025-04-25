@@ -13,6 +13,9 @@
 h1 {
   @include font-body-header;
   margin-bottom: 1rem;
+  @include tablet {
+    @include font-body-header-tablet
+  }
 }
 
 h2 {
@@ -21,6 +24,10 @@ h2 {
   position: relative;
   @include flex-center;
   @include font-body-header;
+
+  @include tablet {
+    @include font-body-header-tablet;
+  }
   
   &::after {
     content: "";
@@ -38,6 +45,16 @@ h3 {
   margin: 2rem 0;
   @include font-body-subheader;
   @include flex-center;
+
+  @include tablet {
+    @include font-body-subheader-tablet;
+  }
+}
+
+h4 {
+  @include font-body-subheader;
+  font-size: 1rem;
+  padding: .5rem 0;
 }
 
 p,
@@ -45,4 +62,8 @@ a,
 ul {
   @include font-body;
   line-height: 1.5rem;
+
+  @include tablet {
+    @include font-body-tablet
+  }
 }

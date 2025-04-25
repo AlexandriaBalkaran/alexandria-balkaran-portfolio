@@ -2,15 +2,23 @@
 @use "/src/styles/partials/_mixins.scss" as *;
 
 #contact {
-  height: 100vh;
-  margin: 2rem 1rem;
+  padding: 2rem 1rem;
+
+  @include tablet {
+    padding: 2rem 2rem;
+  }
 
   .contact__text {
     text-align: center;
+    margin: 0 10%;
   }
 
   .contact__icons {
     width: 2rem;
+
+    @include tablet {
+        width: 3.5rem;
+    }
 
     &-container {
       @include flex-center;
@@ -24,6 +32,10 @@
     border-radius: 50%;
     margin: 1.5rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    @include tablet {
+        margin: 2rem 10%;
+    }
 
     &--center {
         @include flex-center;
