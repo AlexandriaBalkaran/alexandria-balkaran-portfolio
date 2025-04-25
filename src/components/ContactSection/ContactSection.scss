@@ -20,6 +20,11 @@
         width: 3.5rem;
     }
 
+    &:hover {
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+      }
+
     &-container {
       @include flex-center;
       justify-content: space-evenly;

@@ -47,6 +47,7 @@
       &__description {
         font-size: 0.7rem;
         color: $colour-secondary-light-accent;
+        line-height: .75rem;
 
         @include tablet {
             font-size: 1rem;
