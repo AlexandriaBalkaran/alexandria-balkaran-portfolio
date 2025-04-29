@@ -4,35 +4,35 @@
       "title": "Pour Decisions",
       "description": "Pour Decisions is a web application that helps users discover the best happy hour deals in downtown Toronto based on their preferred location (specifically neighbourhood), date and time of day.",
       "techStack": ["React", "Google Maps API" , "SCSS" , "mySQL" , "Knex.js" , "Pour-Decisions API"],
-      "videoSrc": "src/assets/projects/Pour Decisions video.mp4"
+      "videoSrc": "/projects/Pour Decisions video.mp4"
     },
     {
       "id": "snaps",
       "title": "Snaps",
       "description": "Photo sharing app for for photographers.",
       "techStack": ["React" , "SCSS" , "Node.js" , "Express.js"],
-      "videoSrc": "src/assets/projects/Snaps video.mp4"
+      "videoSrc": "/projects/Snaps video.mp4"
     },
     {
       "id": "biz-bot",
       "title": "Biz-Bot.AI",
       "description": "BizBot.AI (a Brainstation X Microsoft project) is an AI-powered assistant designed to help small businesses streamline operations, reduce costs, and optimize decision-making.",
       "techStack": ["React", "Gemini API", "SCSS"],
-      "videoSrc": "src/assets/projects/Biz-Bot video.mp4"
+      "videoSrc": "/projects/Biz-Bot video.mp4"
     },
     {
       "id": "insta-cards",
       "title": "Insta-Cards",
       "description": "Interactive photocard guessing game.",
       "techStack": ["JavaScript", "HTML", "SCSS" , "Insta-Cards API"],
-      "videoSrc": "src/assets/projects/Insta-cards video.mp4"
+      "videoSrc": "/projects/Insta-cards video.mp4"
     },
     {
       "id": "harry-potter",
       "title": "Harry Potter Game",
       "description": "This project is a web-based game where players are presented with an image of a Harry Potter character and must guess the character's name. The game fetches character data from the Harry Potter API and dynamically displays random character images.",
       "techStack": ["JavaScript", "HTML", "SCSS" , "Harry Potter API"],
-      "videoSrc": "src/assets/projects/Harry-potter-game video.mp4"
+      "videoSrc": "/projects/Harry-potter-game video.mp4"
     }
   ]
   
