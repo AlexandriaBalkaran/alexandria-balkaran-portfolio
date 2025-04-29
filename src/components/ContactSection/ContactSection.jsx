@@ -30,7 +30,7 @@ function ContactSection() {
       <div className="contact__image-alexandria--center">
         <img
           className="contact__image-alexandria"
-          src="src/assets/images/Alexandria-selfie.jpg"
+          src="/images/Alexandria-selfie.jpg"
           alt="image of alexandria"
         ></img>
       </div>

@@ -20,7 +20,7 @@ function Hero() {
       <div>
         <img
           className="hero__image-alexandria"
-          src="src/assets/images/Alexandria-picture.JPG"
+          src="/images/Alexandria-picture.JPG"
           alt="image of alexandria"
         ></img>
       </div>
