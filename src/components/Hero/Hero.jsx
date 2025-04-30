@@ -5,7 +5,11 @@ import "./Hero.scss";
 function Hero() {
   const scrollTo = (id) => {
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
+    if (el) {
+      const offset = -60;
+      const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
   };
 
   return (
