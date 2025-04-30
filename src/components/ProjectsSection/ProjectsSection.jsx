@@ -125,7 +125,7 @@ function ProjectsSection() {
           ))}
         </div>
       ) : (
-  
+
         // TABLET/DESKTOP: Show carousel
         currentProject && (
           <div className="carousel__wrapper">
@@ -133,8 +133,20 @@ function ProjectsSection() {
               &#8592;
             </button>
 
+            {/* Left Preview */}
             <div className="carousel__preview">
-              <video muted loop playsInline>
+              <video
+                muted
+                loop
+                playsInline
+                key={
+                  filteredProjects[
+                    currentIndex === 0
+                      ? filteredProjects.length - 1
+                      : currentIndex - 1
+                  ]?.id
+                }
+              >
                 <source
                   src={
                     filteredProjects[
@@ -181,8 +193,17 @@ function ProjectsSection() {
               </div>
             </div>
 
+            {/* Right Preview */}
             <div className="carousel__preview">
-              <video muted loop playsInline>
+              <video
+                muted
+                loop
+                playsInline
+                key={
+                  filteredProjects[(currentIndex + 1) % filteredProjects.length]
+                    ?.id
+                }
+              >
                 <source
                   src={
                     filteredProjects[
