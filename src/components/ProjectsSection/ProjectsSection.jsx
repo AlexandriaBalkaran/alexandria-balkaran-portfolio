@@ -125,7 +125,6 @@ function ProjectsSection() {
           ))}
         </div>
       ) : (
-
         // TABLET/DESKTOP: Show carousel
         currentProject && (
           <div className="carousel__wrapper">
@@ -164,18 +163,22 @@ function ProjectsSection() {
               <div className="project__media">
                 <video
                   className="project__video"
-                  ref={videoRef}
                   muted
                   loop
                   playsInline
-                  onMouseEnter={(e) => e.target.play()}
-                  onMouseLeave={(e) => {
-                    e.target.pause();
-                    e.target.currentTime = 0;
+                  preload="metadata"
+                  poster={project.poster}
+                  key={project.id}
+                  onClick={(e) => {
+                    if (e.target.paused) {
+                      e.target.play();
+                    } else {
+                      e.target.pause();
+                      e.target.currentTime = 0;
+                    }
                   }}
-                  key={currentProject.id}
                 >
-                  <source src={currentProject.videoSrc} type="video/mp4" />
+                  <source src={project.videoSrc} type="video/mp4" />
                 </video>
               </div>
               <div className="project__info">
