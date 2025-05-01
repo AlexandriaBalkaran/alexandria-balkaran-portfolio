@@ -68,7 +68,7 @@ function ProjectsSection() {
         Check out some of my most notable projects.
       </p>
       <p className="projects__subtitle-instructions">
-        Hover to play video. Click arrows or use keyboard to scroll.
+        Click to play live project demo.
       </p>
 
       <div className="projects__filter">
@@ -99,13 +99,16 @@ function ProjectsSection() {
                   muted
                   loop
                   playsInline
-                  onMouseEnter={(e) => e.target.play()}
-                  onMouseLeave={(e) => {
-                    e.target.pause();
-                    e.target.currentTime = 0;
-                  }}
-                  key={project.id}
                   poster={project.poster}
+                  onClick={(e) => {
+                    const video = e.target;
+                    if (video.paused) {
+                      video.play();
+                    } else {
+                      video.pause();
+                      video.currentTime = 0;
+                    }
+                  }}
                 >
                   <source src={project.videoSrc} type="video/mp4" />
                 </video>
@@ -167,8 +170,8 @@ function ProjectsSection() {
                   loop
                   playsInline
                   preload="metadata"
-                  poster={project.poster}
-                  key={project.id}
+                  poster={currentProject.poster}
+                  key={currentProject.id}
                   onClick={(e) => {
                     if (e.target.paused) {
                       e.target.play();
@@ -178,7 +181,7 @@ function ProjectsSection() {
                     }
                   }}
                 >
-                  <source src={project.videoSrc} type="video/mp4" />
+                  <source src={currentProject.videoSrc} type="video/mp4" />
                 </video>
               </div>
               <div className="project__info">
