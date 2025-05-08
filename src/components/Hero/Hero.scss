@@ -5,7 +5,7 @@
 
 #projects,
 #contact {
-  scroll-margin-top: 80px; // adjust to match your navbar height
+  scroll-margin-top: 80px;
 }
 
 .hero {
@@ -16,13 +16,30 @@
   height: auto;
 
   @include tablet {
-    padding: 8rem 3rem;
+    padding: 5rem 3rem;
     
     .hero__text {
         margin: 0 10%;
+
+        @include tablet {
+          margin: 0;
+        }
+
+        &-buttons {
+          @include tablet {
+            @include flex-center;
+            flex-direction: column;
+          }
+        }
     }
   }
 
+  &__container {
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
   .highlight {
     color: $colour-secondary-medium;
     font-weight: bold;
@@ -32,6 +49,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin: 1rem 0;
 
     button {
       padding: 0.75rem 1rem;
@@ -46,7 +64,7 @@
       @include font-body;
 
       @include tablet {
-        padding: 0.75rem 1.25rem;
+        padding: 0.25rem 0.75rem;
         @include font-body-tablet;
       }
 
@@ -65,12 +83,11 @@
   &__image-alexandria {
     width: 50%;
     border-radius: 50%;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
     @include tablet {
-        margin: 2rem 20%;
-        max-width: 80%;
+      width: 70%;
     }
   }
 }
