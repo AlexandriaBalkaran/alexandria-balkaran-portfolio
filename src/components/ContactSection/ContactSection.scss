@@ -8,22 +8,39 @@
     padding: 2rem 2rem;
   }
 
-  .contact__text {
-    text-align: center;
-    margin: 0 10%;
+  .contact {
+    &__container {
+      @include tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        direction: rtl;
+      }
+    }
+    &__text {
+      text-align: center;
+      margin: 0 10%;
+      direction: ltr;
+    }
+    &__icons-text {
+      @include tablet {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        direction: ltr;
+      }
+    }
   }
-
   .contact__icons {
     width: 2rem;
 
     @include tablet {
-        width: 3.5rem;
+      width: 3.5rem;
     }
 
     &:hover {
-        transform: translateY(-5px);
-        transition: transform 0.3s ease;
-      }
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+    }
 
     &-container {
       @include flex-center;
@@ -39,11 +56,11 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 
     @include tablet {
-        margin: 2rem 10%;
+      width: 70%;
     }
 
     &--center {
-        @include flex-center;
+      @include flex-center;
     }
-}
+  }
 }
