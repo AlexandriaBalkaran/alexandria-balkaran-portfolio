@@ -7,6 +7,13 @@
       "videoSrc": "/projects/Pour Decisions video.mp4"
     },
     {
+      "id": "instock",
+      "title": "Instock",
+      "description": "A warehouse and inventory management web application",
+      "techStack": ["React", "SCSS" , "Node.js" , "Express.js" , "mySQL" , "Knex.js"],
+      "videoSrc": "/projects/Instock video.mp4"
+    },
+    {
       "id": "snaps",
       "title": "Snaps",
       "description": "Photo sharing app for for photographers.",
@@ -24,7 +31,7 @@
       "id": "insta-cards",
       "title": "Insta-Cards",
       "description": "Interactive photocard guessing game.",
-      "techStack": ["JavaScript", "HTML", "SCSS" , "Insta-Cards API"],
+      "techStack": ["React" , "SCSS" , "Insta-Cards API" , "Node.js" , "Express.js"],
       "videoSrc": "/projects/Insta-cards video.mp4"
     },
     {
