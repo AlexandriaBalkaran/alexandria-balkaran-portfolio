@@ -145,7 +145,6 @@
 
     @include tablet {
       @include font-body-tablet;
-      font-size: 1.25rem;
     }
 
     &:hover {
@@ -202,6 +201,7 @@
       border: none;
       color: $colour-secondary-dark;
       cursor: pointer;
+      padding: .5rem;
 
       &:hover {
         transform: scale(1.2);
