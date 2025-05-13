@@ -96,20 +96,11 @@ function ProjectsSection() {
               <div className="project__media">
                 <video
                   className="project__video"
+                  autoPlay
                   muted
                   loop
                   playsInline
-                  poster={project.poster}
                   preload="metadata"
-                  onClick={(e) => {
-                    const video = e.target;
-                    if (video.paused) {
-                      video.play();
-                    } else {
-                      video.pause();
-                      video.currentTime = 0;
-                    }
-                  }}
                 >
                   <source src={project.videoSrc} type="video/mp4" />
                 </video>
