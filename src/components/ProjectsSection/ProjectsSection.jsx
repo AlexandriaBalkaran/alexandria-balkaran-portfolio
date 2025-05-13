@@ -100,6 +100,7 @@ function ProjectsSection() {
                   loop
                   playsInline
                   poster={project.poster}
+                  preload="metadata"
                   onClick={(e) => {
                     const video = e.target;
                     if (video.paused) {
