@@ -12,14 +12,6 @@ function NavBar({ darkMode, toggleDarkMode }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const scrollToSection = (id) => {
-  //   const section = document.getElementById(id);
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: "smooth" });
-  //     setIsMenuOpen(false);
-  //   }
-  // };
-
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -49,10 +41,10 @@ function NavBar({ darkMode, toggleDarkMode }) {
           <p onClick={() => scrollToSection("contact")}>Contact</p>
         </div>
 
-        {/* Theme toggle - Will add this back in after inital deployment */}
-        {/* <button onClick={toggleDarkMode} className="nav-bar__theme-toggle">
+        {/* Theme toggle - Dark Mode*/}
+        <button onClick={toggleDarkMode} className="nav-bar__theme-toggle">
           {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-        </button> */}
+        </button>
 
         {/* Mobile menu button */}
         <button

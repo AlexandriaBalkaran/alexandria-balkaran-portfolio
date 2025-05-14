@@ -111,6 +111,26 @@
     }
   }
 }
+/* Dark mode for Project Card */
+.dark {
+  .project__info {
+    background-color: $colour-primary-dark;
+    color: $colour-primary-light;
+  }
+
+  .project__card.active {
+    border: 1px solid $colour-primary-light;
+  }
+
+  .project__description {
+    color: $colour-primary-light;
+  }
+
+  .projects--carousel .carousel__arrow {
+    color: $colour-primary-light;
+  }
+}
+
 
 @keyframes fadeInUp {
   0% {
