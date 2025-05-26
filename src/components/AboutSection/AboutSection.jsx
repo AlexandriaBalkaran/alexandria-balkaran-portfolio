@@ -15,7 +15,7 @@ function AboutSection() {
       </p>
       <p className="about__text">When I'm not working, you can find me exploring new hiking trails, camping, fishing or reading.</p>
       <p className="about__text">Let’s make something great!</p>
-
+      
       <h3>Tech Stack</h3>
       <div className="tech-stack">
         {techStack.map((tech) => (

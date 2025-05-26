@@ -37,7 +37,7 @@ function Homepage() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero></Hero>
       <ProjectsSection />
-      <AboutSection />
+      <AboutSection darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <ContactSection />
       <Footer></Footer>
     </div>

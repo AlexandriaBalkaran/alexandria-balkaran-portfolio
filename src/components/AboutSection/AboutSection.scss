@@ -37,7 +37,7 @@
       &:hover {
         transform: translateY(-5px);
       }
-  
+      
       &__icon {
         width: 2.5rem;
         height: 2.5rem;
@@ -56,5 +56,9 @@
     }
   }
 
-
-  
+  .dark {
+    #about .tech-card {
+      background-color: $colour-primary-dark;
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 1);
+    }
+  }
