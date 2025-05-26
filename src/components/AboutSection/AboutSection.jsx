@@ -7,7 +7,9 @@ function AboutSection() {
     <section id="about">
       <h2>About</h2>
       <p className="about__text">
-      Former Sales & Marketing pro turned Software Engineer with a curious mind and a get-it-done spirit. After years of working in marketing within the tech space, I decided it was time follow my dreams and learn to code.
+      Sales & Marketing pro turned Software Engineer with a curious mind and a get-it-done spirit. 
+      After years of working in sales and marketing within the tech space, I decided it was time 
+      to better myself and learn to code.
       </p>
       <p className="about__text">
         I love tackling new challenges, learning new things,
